@@ -2,7 +2,9 @@ package com.omarcomputer.javafragments.Model;
 
 import com.squareup.moshi.Json;
 
-public class Monster {
+import java.io.Serializable;
+
+public class Monster implements Serializable {
     @Json(name = "imageFile")
     private String imageFile;
 

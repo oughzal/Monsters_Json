@@ -51,5 +51,14 @@ public class MonsterViewModel extends ViewModel {
         loadMonsters();
         return this.monsters;
     }
+    public List<Monster> getMonstersList() {
+        try{
+            loadMonsters();
+            return (List<Monster>) this.monsters;
+        } catch (IOException e) {
+            return  null;
+        }
+
+    }
 
 }
